@@ -11,7 +11,7 @@
      var boolean = true;
      var nul = null;
      let z = "Hola Mundo";
-     x = 100;
+     var y = 100;
 
      document.write(boolean);
      document.write("<br>");
@@ -22,10 +22,30 @@
      document.write(z);
      document.write("<br>");
 
-     document.write(x);
+     document.write(y);
      document.write("<br>");
 
+    function ala(t){
+        if(t == 'undefined'){
+            return 'undefined value!';
+        }
+        return t;
+    }
+    let x;
+    document.write(ala(x) + "<br><br>");
+
      
+  
+
+  const bigInt = 10 ** 9;
+  document.write(bigInt + "<br>");
+
+  let id1= Symbol ("id");
+  let id2= Symbol ("id");
+  document.write(id1 ==id2); // false
+
+  const obj = new Date("2006-06-14");
+     document.write(obj);
      
 
 </script>
